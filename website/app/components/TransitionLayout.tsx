@@ -13,7 +13,7 @@ const PageContext = createContext<Partial<Context>>({});
 /**
  * Provider
  */
-export const TransitionLayout: React.FC<{ children: React.ReactNode }> = ({
+const TransitionLayout: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -35,3 +35,4 @@ export const TransitionLayout: React.FC<{ children: React.ReactNode }> = ({
  * export
  */
 export const useTransition = () => useContext(PageContext);
+export default TransitionLayout;

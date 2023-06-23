@@ -1,5 +1,5 @@
 'use client';
-import { useTransition } from './TransitionLayout';
+import { useTransition } from '@/components/TransitionLayout';
 import { useEffect, useRef, useMemo } from 'react';
 
 interface TransitionDivProps {
@@ -8,7 +8,7 @@ interface TransitionDivProps {
   animation?: 'fadeUp' | 'fadeDown' | 'fadeLeft' | 'fadeRight';
 }
 
-export const TransitionDiv: React.FC<TransitionDivProps> = ({
+const TransitionDiv: React.FC<TransitionDivProps> = ({
   children,
   className,
   animation,
@@ -18,7 +18,6 @@ export const TransitionDiv: React.FC<TransitionDivProps> = ({
 
   useEffect(() => {
     start?.();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const divHeight = useMemo(() => {
@@ -30,7 +29,6 @@ export const TransitionDiv: React.FC<TransitionDivProps> = ({
       default:
         return 0;
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ref?.current?.clientHeight]);
 
   const divWidth = useMemo(() => {
@@ -42,7 +40,6 @@ export const TransitionDiv: React.FC<TransitionDivProps> = ({
       default:
         return 0;
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ref?.current?.clientWidth]);
 
   return (
@@ -59,3 +56,5 @@ export const TransitionDiv: React.FC<TransitionDivProps> = ({
     </div>
   );
 };
+
+export default TransitionDiv;

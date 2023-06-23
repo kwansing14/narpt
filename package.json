@@ -1,14 +1,10 @@
 {
   "name": "nadpt",
   "version": "0.1.0",
-  "private": true,
+  "description": "nextjs app directory page transition",
   "main": "src/index.ts",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "license": "MIT",
+  "scripts": {},
   "dependencies": {
     "@types/node": "20.3.1",
     "@types/react": "18.2.13",

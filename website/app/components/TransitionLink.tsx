@@ -1,16 +1,16 @@
 'use client';
 
 import Link from 'next/link';
-import { useTransition } from './TransitionLayout';
+import { useTransition } from '@/components/TransitionLayout';
 import { useRouter, usePathname } from 'next/navigation';
 
 interface TransitionLinkProps {
   href: string;
-  children: React.ReactNode | undefined;
+  children: React.ReactNode;
   className?: string;
 }
 
-export const TransitionLink: React.FC<TransitionLinkProps> = ({
+const TransitionLink: React.FC<TransitionLinkProps> = ({
   href,
   children,
   className,
@@ -34,3 +34,5 @@ export const TransitionLink: React.FC<TransitionLinkProps> = ({
     </Link>
   );
 };
+
+export default TransitionLink;
