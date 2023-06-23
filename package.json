@@ -1,11 +1,11 @@
 {
   "name": "nadpt",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "nextjs app directory page transition",
   "main": "src/index.ts",
   "license": "MIT",
   "scripts": {},
-  "dependencies": {
+  "peerDependencies": {
     "@types/node": "20.3.1",
     "@types/react": "18.2.13",
     "@types/react-dom": "18.2.6",

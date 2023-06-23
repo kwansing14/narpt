@@ -24,8 +24,8 @@ dependencies:
     specifier: 13.4.6
     version: 13.4.6(eslint@8.43.0)(typescript@5.1.3)
   nadpt:
-    specifier: ^0.1.0
-    version: 0.1.0
+    specifier: ^0.0.1
+    version: 0.0.1
   next:
     specifier: 13.4.6
     version: 13.4.6(react-dom@18.2.0)(react@18.2.0)
@@ -1927,8 +1927,8 @@ packages:
       thenify-all: 1.6.0
     dev: false
 
-  /nadpt@0.1.0:
-    resolution: {integrity: sha512-Rf2qeu9APITqzTj0rYTRMtei2tSkB1Fujb/DYB+ZxG4Oqm3mjdjdyNS5D8dMdJBAMSVjzv7Rg2C4YJCfkuciVg==}
+  /nadpt@0.0.1:
+    resolution: {integrity: sha512-/H+wR+j/mNWpIZ1OG/Sk/X/tvHOUlR0nbQP3TFq1sIT/TQ6nu3AQghrUZvfwZEeYtVeoJoiYVr68ckv3Nkqo7A==}
     dependencies:
       '@types/node': 20.3.1
       '@types/react': 18.2.13
