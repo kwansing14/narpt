@@ -1,4 +1,4 @@
-import TransitionDiv from '@/components/TransitionDiv';
+import { TransitionDiv } from 'nadpt';
 
 interface DynamicPageProps {
   params: {

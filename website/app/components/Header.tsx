@@ -1,5 +1,4 @@
-import TransitionLink from './TransitionLink';
-import TransitionDiv from './TransitionDiv';
+import { TransitionLink, TransitionDiv } from 'nadpt';
 
 const Header = () => {
   return (

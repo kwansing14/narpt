@@ -1,7 +1,7 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
-import TransitionLayout from '@/components/TransitionLayout';
+import { TransitionLayout } from 'nadpt';
 
 const inter = Inter({ subsets: ['latin'] });
 
