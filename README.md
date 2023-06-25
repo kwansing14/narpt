@@ -54,23 +54,22 @@ Step 2: replace <Link> with <TransitionLink>
 import { TransitionLink } from 'nadpt';
 // import Link from 'next/link';
 
-const ExamplePage = () => {
+const LinkPage = () => {
   return (
     {/* <Link href='example'>Go to Page 1</Link> */}
     <TransitionLink href='/page1'>Go to Page 1</TransitionLink>
   );
 };
 
-export default ExamplePage;
+export default LinkPage;
 ```
 
 Step 3: replace <div> with <TransitionDiv>
 
 ```jsx
 import { TransitionDiv } from 'nadpt';
-import Header from '@/components/Header';
 
-const DynamicPage = () => {
+const AnimatedTextPage = () => {
   return (
     <div>
       <TransitionDiv>This text will have animation.</TransitionDiv>
@@ -78,5 +77,5 @@ const DynamicPage = () => {
   );
 };
 
-export default DynamicPage;
+export default AnimatedTextPage;
 ```
