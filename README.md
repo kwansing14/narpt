@@ -31,7 +31,6 @@ pnpm i nadpt
 2. replace `app/layout.js` with the following code
 
 ```jsx
-import './globals.css';
 import { Inter } from 'next/font/google';
 import { TransitionLayout } from 'nadpt';
 const inter = Inter({ subsets: ['latin'] });
