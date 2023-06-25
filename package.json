@@ -1,10 +1,17 @@
 {
   "name": "nadpt",
-  "version": "0.0.2",
-  "description": "nextjs app directory page transition",
-  "main": "src/index.ts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && cp package.json README.md ./dist"
+  },
   "peerDependencies": {
     "@types/node": "20.3.1",
     "@types/react": "18.2.13",

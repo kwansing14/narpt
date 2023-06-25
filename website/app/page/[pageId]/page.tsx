@@ -1,4 +1,4 @@
-import { TransitionDiv } from 'nadpt';
+import { TransitionDiv } from 'kwan-test-123zz';
 
 interface DynamicPageProps {
   params: {
