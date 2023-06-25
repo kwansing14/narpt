@@ -24,56 +24,59 @@ For pnpm users:
 pnpm i nadpt
 ```
 
-## Usage
+## QuickStart
 
-Step 1: wrap `{children}` with `<TransitionLayout>` in app/layout.jsx
+1. create a new nextjs app with `pnpm create next-app`, select yes for App
+   Router
+2. replace `app/layout.js` with the following code
 
 ```jsx
 import './globals.css';
 import { Inter } from 'next/font/google';
 import { TransitionLayout } from 'nadpt';
-
 const inter = Inter({ subsets: ['latin'] });
 
-export default function RootLayout({ children }: { children }) {
+export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <TransitionLayout>
-          {children}
-        </TransitionLayout>
+        <TransitionLayout>{children}</TransitionLayout>
       </body>
     </html>
   );
 }
 ```
 
-Step 2: replace `<Link>` with `<TransitionLink>`
+3. replace `app/page.js` with the following code
 
 ```jsx
-import { TransitionLink } from 'nadpt';
-// import Link from 'next/link';
-
-const LinkPage = () => {
+import { TransitionLink, TransitionDiv } from 'nadpt';
+export default function Home() {
   return (
-    {/* <Link href='/page1'>Go to Page 1</Link> */}
-    <TransitionLink href='/page1'>Go to Page 1</TransitionLink>
+    <main>
+      <TransitionDiv>
+        <TransitionLink href='/about'>Go To About</TransitionLink>
+        <div>Home Page</div>
+      </TransitionDiv>
+    </main>
+  );
+}
+```
+
+4. create a new page `app/about/page.js` and insert the following code
+
+```jsx
+import { TransitionDiv, TransitionLink } from 'nadpt';
+const AboutPage = () => {
+  return (
+    <TransitionDiv>
+      <TransitionLink href='/'>Back</TransitionLink>
+      <div>About Page</div>
+    </TransitionDiv>
   );
 };
 
-export default LinkPage;
+export default AboutPage;
 ```
 
-Step 3: replace any `<div>` with `<TransitionDiv>` to add animation during page transition.
-
-```jsx
-import { TransitionDiv } from 'nadpt';
-
-const AnimatedTextPage = () => {
-  return (
-    <TransitionDiv>This text will have animation.</TransitionDiv>
-  );
-};
-
-export default AnimatedTextPage;
-```
+5. Done.
