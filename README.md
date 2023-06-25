@@ -26,7 +26,7 @@ pnpm i nadpt
 
 ## Usage
 
-Step 1: wrap {children} with `<TransitionLayout>` to app/layout.jsx
+Step 1: wrap `{children}` with `<TransitionLayout>` in app/layout.jsx
 
 ```jsx
 import './globals.css';
