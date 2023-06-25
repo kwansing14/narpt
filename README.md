@@ -78,5 +78,3 @@ const AboutPage = () => {
 
 export default AboutPage;
 ```
-
-5. Done.
