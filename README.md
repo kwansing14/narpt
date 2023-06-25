@@ -26,7 +26,7 @@ pnpm i nadpt
 
 ## Usage
 
-Step 1: wrap {children} with <TransitionLayout> to app/layout.jsx
+Step 1: wrap {children} with `<TransitionLayout>` to app/layout.jsx
 
 ```jsx
 import './globals.css';
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children }) {
 }
 ```
 
-Step 2: replace <Link> with <TransitionLink>
+Step 2: replace `<Link>` with `<TransitionLink>`
 
 ```jsx
 import { TransitionLink } from 'nadpt';
@@ -64,7 +64,7 @@ const LinkPage = () => {
 export default LinkPage;
 ```
 
-Step 3: replace <div> with <TransitionDiv>
+Step 3: replace `<div>` with `<TransitionDiv>`
 
 ```jsx
 import { TransitionDiv } from 'nadpt';
