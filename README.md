@@ -56,7 +56,7 @@ import { TransitionLink } from 'nadpt';
 
 const LinkPage = () => {
   return (
-    {/* <Link href='example'>Go to Page 1</Link> */}
+    {/* <Link href='/page1'>Go to Page 1</Link> */}
     <TransitionLink href='/page1'>Go to Page 1</TransitionLink>
   );
 };
