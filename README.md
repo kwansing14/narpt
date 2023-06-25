@@ -64,16 +64,14 @@ const LinkPage = () => {
 export default LinkPage;
 ```
 
-Step 3: replace `<div>` with `<TransitionDiv>`
+Step 3: replace any `<div>` with `<TransitionDiv>` to add animation during page transition.
 
 ```jsx
 import { TransitionDiv } from 'nadpt';
 
 const AnimatedTextPage = () => {
   return (
-    <div>
-      <TransitionDiv>This text will have animation.</TransitionDiv>
-    </div>
+    <TransitionDiv>This text will have animation.</TransitionDiv>
   );
 };
 
