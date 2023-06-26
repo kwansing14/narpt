@@ -1,6 +1,6 @@
 {
   "name": "nadpt",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "nextjs app directory page transition",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && cp package.json README.md ./dist"
+    "build": "npm run clean && tsc"
   },
   "peerDependencies": {
     "@types/node": "^20.3.1",
