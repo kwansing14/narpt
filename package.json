@@ -10,7 +10,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && cp package.json README.md ./dist"
+    "build": "npm run clean && tsc && cp package.json README.md ./dist",
+    "publish": "npm version patch && npm publish"
   },
   "peerDependencies": {
     "@types/node": "^20.3.1",
