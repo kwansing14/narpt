@@ -1,6 +1,6 @@
 {
   "name": "nadpt",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "nextjs app directory page transition",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
