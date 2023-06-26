@@ -1,6 +1,5 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-import Header from '@/components/Header';
 import { TransitionLayout } from 'nadpt';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -18,10 +17,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <TransitionLayout>
-          <Header />
-          {children}
-        </TransitionLayout>
+        <TransitionLayout>{children}</TransitionLayout>
       </body>
     </html>
   );
