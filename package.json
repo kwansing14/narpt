@@ -1,7 +1,15 @@
 {
   "name": "nadpt",
   "version": "0.0.14",
-  "description": "nextjs app directory page transition",
+  "description": "Nextjs app directory page transition",
+  "repository": "kwansing14/nadpt",
+  "keywords": [
+    "nextjs",
+    "app",
+    "directory",
+    "page",
+    "transition"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

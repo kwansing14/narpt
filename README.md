@@ -78,3 +78,7 @@ const AboutPage = () => {
 
 export default AboutPage;
 ```
+
+## Full Documentation
+
+Coming soon...
