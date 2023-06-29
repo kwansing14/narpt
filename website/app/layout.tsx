@@ -35,10 +35,10 @@ export default function RootLayout({
               Nextjs App Directory Page Transition
             </Link>
             <div className='max-w-5xl border w-full flex mt-12'>
-              <div className='w-2/12 border text-sm'>
+              <div className='w-3/12 border px-8'>
                 <Links />
               </div>
-              <div className='w-10/12 border'>{children}</div>
+              <div className='w-9/12 border px-8'>{children}</div>
             </div>
           </main>
         </TransitionLayout>

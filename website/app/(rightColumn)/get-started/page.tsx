@@ -1,8 +1,8 @@
 const getStartedPage = () => {
   return (
     <div>
-      <h1>Get Started</h1>
-      <p>Get started with our product</p>
+      <h2 className='text-xl'>Installation</h2>
+      <p>For npm users:</p>
     </div>
   );
 };
