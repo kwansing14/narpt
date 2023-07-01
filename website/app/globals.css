@@ -9,6 +9,9 @@
   .links-cmp > a {
     @apply text-sm text-slate-700;
   }
+  .links-cmp > p {
+    @apply text-sm text-slate-700;
+  }
   .docs-cmp > h1 {
     @apply text-2xl font-bold text-slate-900 mb-4;
   }
@@ -34,7 +37,7 @@
     @apply text-sm text-slate-700;
   }
   .docs-cmp > ul > li > ul {
-    @apply list-disc ml-4;
+    @apply list-disc ml-4 mt-2;
   }
   .docs-cmp > ul > li > code {
     @apply text-slate-700 px-2 rounded py-1 bg-zinc-300;

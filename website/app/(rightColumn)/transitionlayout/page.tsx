@@ -6,24 +6,26 @@ const TransitionLayout = () => {
     <TransitionDiv className='docs-cmp'>
       <h2>{'<TransitionLayout>'}</h2>
       <p>
-        <code>{'<TransitionLink>'}</code> can be used to replace any{' '}
-        <code>{'<Link>'}</code> to trigger the transition animation.
+        <code>{'<TransitionLayout>'}</code> serves as a provider for a context.
       </p>
       <div className='divider' />
       <h2>Usage</h2>
       <ul>
-        <li>Find a content to animated.</li>
-        <Code language='javascript'>{`const HomePage = () => {
-  return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque debitis esse
-      cum necessitatibus? Tenetur animi aliquam rem enim incidunt explicabo.
-    </div>
-  )
-}
+        <li>
+          In <code>{'app/layout.jsx'}</code> ,wrapped the{' '}
+          <code>{'{children}'}</code> with <code>{'<TransitionLayout>'}</code>.
+        </li>
+        <Code language='javascript'>{`import { TransitionLayout } from 'nadpt';
 
-export default HomePage;
-        `}</Code>
+export default function RootLayout({ children }) {
+  return (
+    <html lang='en'>
+      <body>
+        <TransitionLayout>{children}</TransitionLayout>
+      </body>
+    </html>
+  );
+}`}</Code>
       </ul>
     </TransitionDiv>
   );

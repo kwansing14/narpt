@@ -7,7 +7,7 @@ const TransitionDivDocs = () => {
       <h2>{'<TransitionDiv>'}</h2>
       <p>
         Wrap any content with <code>{'<TransitionDiv>'}</code> to add page entry
-        and exit animation.
+        and exit animation to the content.
       </p>
       <div className='divider' />
       <h2>Usage</h2>
@@ -44,7 +44,7 @@ export default HomePage;`}</Code>
       <h2>Props</h2>
       <ul>
         <li>
-          Custom <code>animation</code>
+          <code>animation</code>
           <ul>
             <li>fadeUp</li>
             <li>fadeDown</li>
