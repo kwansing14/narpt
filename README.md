@@ -51,6 +51,7 @@ export default function RootLayout({ children }) {
 
 ```jsx
 import { TransitionLink, TransitionDiv } from 'nadpt';
+
 export default function Home() {
   return (
     <main>
@@ -67,6 +68,7 @@ export default function Home() {
 
 ```jsx
 import { TransitionDiv, TransitionLink } from 'nadpt';
+
 const AboutPage = () => {
   return (
     <TransitionDiv>
