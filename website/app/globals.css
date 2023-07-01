@@ -3,13 +3,40 @@
 @tailwind utilities;
 
 @layer components {
-  .heading-2 {
-    @apply text-sm uppercase font-semibold text-slate-900;
+  .links-cmp > h2 {
+    @apply font-bold text-slate-900;
   }
-  .heading-3 {
+  .links-cmp > a {
     @apply text-sm text-slate-700;
   }
-  .heading-4 {
-    @apply text-sm text-slate-500;
+  .docs-cmp > h1 {
+    @apply text-2xl font-bold text-slate-900 mb-4;
+  }
+  .docs-cmp > h2 {
+    @apply text-xl font-semibold text-slate-900 mb-2;
+  }
+  .docs-cmp > h3 {
+    @apply text-sm uppercase font-semibold text-slate-900;
+  }
+  .docs-cmp > p {
+    @apply text-sm text-slate-700;
+  }
+  .docs-cmp > p > code {
+    @apply text-slate-700 px-2 rounded-lg py-1 bg-zinc-300;
+  }
+  .docs-cmp > .divider {
+    @apply border-slate-300 w-full border mt-6 mb-6 border-t-0;
+  }
+  .docs-cmp > ul {
+    @apply list-decimal pl-5;
+  }
+  .docs-cmp > ul > li {
+    @apply text-sm text-slate-700;
+  }
+  .docs-cmp > ul > li > code {
+    @apply text-slate-700 px-2 rounded py-1 bg-zinc-300;
+  }
+  .docs-cmp > ul > div > pre {
+    @apply -ml-5;
   }
 }
