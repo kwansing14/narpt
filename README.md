@@ -84,3 +84,7 @@ export default AboutPage;
 ## Full Documentation
 
 Coming soon...
+
+## License
+
+[The MIT License.](https://opensource.org/licenses/MIT)
