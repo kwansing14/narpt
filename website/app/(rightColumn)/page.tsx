@@ -1,5 +1,7 @@
+import { TransitionDiv } from 'nadpt';
+
 const Home = () => {
-  return <div>page1</div>;
+  return <TransitionDiv>page1</TransitionDiv>;
 };
 
 export default Home;
