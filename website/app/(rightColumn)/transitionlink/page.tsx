@@ -6,8 +6,7 @@ const TransitionLink = () => {
       <h2>{'Transition Link'}</h2>
       <p>
         <code>{'<TransitionLink>'}</code> can be used to replace any{' '}
-        <code>{'<Link>'}</code> that is reponsible on triggering the transition
-        animation.
+        <code>{'<Link>'}</code> to trigger the transition animation.
       </p>
       <div className='divider' />
       <h2>Usage</h2>
