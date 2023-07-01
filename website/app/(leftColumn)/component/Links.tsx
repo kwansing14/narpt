@@ -1,14 +1,18 @@
-import Link from 'next/link';
+import { TransitionLink } from 'nadpt';
 
 const Links = () => {
   return (
     <div className='flex flex-col gap-2 links-cmp'>
       <h2>Overview</h2>
-      <Link href='/get-started'>Get started</Link>
+      <TransitionLink href='/get-started'>Get started</TransitionLink>
       <h2>API</h2>
-      <Link href='/transitionlayout'>{'<TransitionLayout>'}</Link>
-      <Link href='/transitionlink'>{'<TransitionLink>'}</Link>
-      <Link href='/transitiondiv'>{'<TransitionDiv>'}</Link>
+      <TransitionLink href='/transitionlayout'>
+        {'<TransitionLayout>'}
+      </TransitionLink>
+      <TransitionLink href='/transitionlink'>
+        {'<TransitionLink>'}
+      </TransitionLink>
+      <TransitionLink href='/transitiondiv'>{'<TransitionDiv>'}</TransitionLink>
       <h2>Examples</h2>
     </div>
   );

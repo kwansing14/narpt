@@ -1,9 +1,10 @@
 import Code from '@/components/Code';
+import { TransitionDiv } from 'nadpt';
 
 const TransitionLink = () => {
   return (
-    <div className='docs-cmp'>
-      <h2>{'Transition Link'}</h2>
+    <TransitionDiv className='docs-cmp'>
+      <h2>{'<TransitionLink>'}</h2>
       <p>
         <code>{'<TransitionLink>'}</code> can be used to replace any{' '}
         <code>{'<Link>'}</code> to trigger the transition animation.
@@ -40,7 +41,7 @@ const HomePage = () => {
 export default HomePage;
         `}</Code>
       </ul>
-    </div>
+    </TransitionDiv>
   );
 };
 

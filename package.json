@@ -5,10 +5,12 @@
   "repository": "kwansing14/nadpt",
   "keywords": [
     "nextjs",
-    "app",
-    "directory",
+    "app directory",
+    "page transition",
     "page",
-    "transition"
+    "animation",
+    "transition",
+    "transitions"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

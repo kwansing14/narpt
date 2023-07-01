@@ -1,8 +1,9 @@
 import Code from '@/components/Code';
+import { TransitionDiv } from 'nadpt';
 
 const getStartedPage = () => {
   return (
-    <div className='docs-cmp'>
+    <TransitionDiv className='docs-cmp'>
       <h2>Installation</h2>
       <p>For npm users:</p>
       <Code language='bash'>{'npm i nadpt'}</Code>
@@ -75,7 +76,7 @@ const AboutPage = () => {
 export default AboutPage;`}
         </Code>
       </ul>
-    </div>
+    </TransitionDiv>
   );
 };
 

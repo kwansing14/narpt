@@ -33,10 +33,17 @@
   .docs-cmp > ul > li {
     @apply text-sm text-slate-700;
   }
+  .docs-cmp > ul > li > ul {
+    @apply list-disc ml-4;
+  }
   .docs-cmp > ul > li > code {
     @apply text-slate-700 px-2 rounded py-1 bg-zinc-300;
   }
   .docs-cmp > ul > div > pre {
     @apply -ml-5;
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
