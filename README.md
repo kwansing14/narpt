@@ -28,7 +28,7 @@ pnpm i nadpt
 
 1. create a new nextjs app with `pnpm create next-app`, select yes for App
    Router.
-2. run `npm i nadpt`.
+2. run `pnpm i nadpt`.
 3. replace `app/layout.js` with the following code.
 
 ```jsx
