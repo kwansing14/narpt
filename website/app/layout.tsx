@@ -1,9 +1,8 @@
 import './globals.css';
 
 import { Inter } from 'next/font/google';
-import { TransitionLayout } from 'nadpt';
+import { TransitionLayout, TransitionLink } from 'nadpt';
 import Links from '@/(leftColumn)/component/Links';
-import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -29,17 +28,17 @@ export default function RootLayout({
       >
         <TransitionLayout>
           <main className='flex min-h-screen flex-col items-center border pb-24'>
-            <Link
+            <TransitionLink
               href='/'
               className=' font-extrabold tracking-tight text-3xl mt-12'
             >
               Nextjs App Directory Page Transition
-            </Link>
+            </TransitionLink>
             <div className='max-w-5xl w-full flex mt-12'>
               <div className='w-3/12 px-8'>
                 <Links />
               </div>
-              <div className='w-9/12 px-8'>{children}</div>
+              <div className='w-9/12 px-8'>{children}</div>{' '}
             </div>
           </main>
         </TransitionLayout>
