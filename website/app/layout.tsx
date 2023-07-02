@@ -7,7 +7,7 @@ import Links from '@/(leftColumn)/component/Links';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Nadpt',
+  title: 'NADPT',
   description: 'Nextjs App Directory Page Transition',
 };
 
