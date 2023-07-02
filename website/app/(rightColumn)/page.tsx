@@ -1,12 +1,7 @@
 import { TransitionDiv } from 'nadpt';
 
 const Home = () => {
-  return (
-    <TransitionDiv>
-      This library provides a lightweight page transiting animation when the
-      route changed.
-    </TransitionDiv>
-  );
+  return <TransitionDiv>home</TransitionDiv>;
 };
 
 export default Home;

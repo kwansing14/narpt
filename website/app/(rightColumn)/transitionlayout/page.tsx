@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
   );
 }`}</Code>
       </ul>
+      <div className='divider' />
     </TransitionDiv>
   );
 };

@@ -76,6 +76,7 @@ const AboutPage = () => {
 export default AboutPage;`}
         </Code>
       </ul>
+      <div className='divider' />
     </TransitionDiv>
   );
 };

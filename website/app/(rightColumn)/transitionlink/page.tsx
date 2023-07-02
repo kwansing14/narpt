@@ -41,6 +41,7 @@ const HomePage = () => {
 export default HomePage;
         `}</Code>
       </ul>
+      <div className='divider' />
     </TransitionDiv>
   );
 };

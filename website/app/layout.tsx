@@ -29,16 +29,17 @@ export default function RootLayout({
         <TransitionLayout>
           <main className='flex min-h-screen flex-col items-center border pb-24'>
             <TransitionLink
-              href='/'
-              className=' font-extrabold tracking-tight text-3xl mt-12'
+              href='/get-started'
+              className='font-extrabold tracking-tight text-2xl sm:text-3xl mt-12 text-center px-4 sm:px-8'
             >
               Nextjs App Directory Page Transition
             </TransitionLink>
-            <div className='max-w-5xl w-full flex mt-12'>
-              <div className='w-3/12 px-8'>
+            <div className='max-w-5xl w-full flex mt-12 flex-col sm:flex-row'>
+              <div className='w-full sm:w-3/12 px-4 sm:px-8'>
                 <Links />
+                <div className='border border-slate-300 border-t-0 my-8' />
               </div>
-              <div className='w-9/12 px-8'>{children}</div>{' '}
+              <div className='w-full sm:w-9/12 px-4 sm:px-8'>{children}</div>{' '}
             </div>
           </main>
         </TransitionLayout>
