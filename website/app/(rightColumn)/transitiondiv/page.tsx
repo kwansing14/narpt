@@ -25,7 +25,7 @@ const TransitionDivDocs = () => {
 export default HomePage;
         `}</Code>
         <li>
-          Replace <code>{'div'}</code> with <code>{'<TransitionDiv>'}</code>
+          Replace <code>{'<div>'}</code> with <code>{'<TransitionDiv>'}</code>
         </li>
         <Code language='javascript'>{`import { TransitionDiv } from 'narpt';
         
