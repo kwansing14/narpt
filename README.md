@@ -83,7 +83,7 @@ export default AboutPage;
 
 ## Full Documentation
 
-Coming soon...
+[Docs](https://narpt.kwansing.dev/get-started)
 
 ## License
 
