@@ -15,8 +15,8 @@ const getStartedPage = () => {
       <h2>QuickStart</h2>
       <ul>
         <li>
-          create a new nextjs app with pnpm create next-app, select yes for App
-          Router.
+          create a new nextjs app with <code>pnpm create next-app</code>, select
+          yes for App Router.
         </li>
         <li>
           run <code>pnpm i narpt.</code>
