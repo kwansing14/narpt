@@ -13,8 +13,6 @@ const Links = () => {
         {'<TransitionLink>'}
       </TransitionLink>
       <TransitionLink href='/transitiondiv'>{'<TransitionDiv>'}</TransitionLink>
-      <h2>Examples</h2>
-      <p>Coming soon...</p>
     </div>
   );
 };
