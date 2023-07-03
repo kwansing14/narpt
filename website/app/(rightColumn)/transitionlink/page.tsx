@@ -1,6 +1,11 @@
 import Code from '@/components/Code';
 import { TransitionDiv } from 'narpt';
 
+export const metadata = {
+  title: 'NARPT - <TransitionLink>',
+  description: 'Nextjs App Router Page Transition',
+};
+
 const TransitionLink = () => {
   return (
     <TransitionDiv className='docs-cmp'>

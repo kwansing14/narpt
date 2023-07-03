@@ -7,7 +7,7 @@ import Links from '@/(leftColumn)/component/Links';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'NARPT',
+  title: 'NARPT - Get Started',
   description: 'Nextjs App Router Page Transition',
 };
 
