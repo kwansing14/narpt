@@ -1,4 +1,4 @@
-nadpt - Nextjs App Directory Page Transition.
+nadpt - Nextjs App Router Page Transition.
 
 ## Support
 

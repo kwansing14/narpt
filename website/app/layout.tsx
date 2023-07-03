@@ -7,8 +7,8 @@ import Links from '@/(leftColumn)/component/Links';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'NADPT',
-  description: 'Nextjs App Directory Page Transition',
+  title: 'NARPT',
+  description: 'Nextjs App Router Page Transition',
 };
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
               href='/get-started'
               className='font-extrabold tracking-tight text-2xl sm:text-3xl mt-12 text-center px-4 sm:px-8'
             >
-              Nextjs App Directory Page Transition
+              Nextjs App Router Page Transition
             </TransitionLink>
             <div className='max-w-5xl w-full flex mt-12 flex-col sm:flex-row'>
               <div className='w-full sm:w-3/12 px-4 sm:px-8'>

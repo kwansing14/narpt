@@ -1,11 +1,11 @@
 {
-  "name": "nadpt",
+  "name": "narpt",
   "version": "0.0.14",
-  "description": "Nextjs app directory page transition",
-  "repository": "kwansing14/nadpt",
+  "description": "Nextjs app router page transition",
+  "repository": "kwansing14/narpt",
   "keywords": [
     "nextjs",
-    "app directory",
+    "app router",
     "page transition",
     "page",
     "animation",
