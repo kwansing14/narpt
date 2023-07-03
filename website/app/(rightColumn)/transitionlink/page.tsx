@@ -1,5 +1,5 @@
 import Code from '@/components/Code';
-import { TransitionDiv } from 'nadpt';
+import { TransitionDiv } from 'narpt';
 
 const TransitionLink = () => {
   return (
@@ -30,7 +30,7 @@ export default HomePage;
           <code>{'<TransitionLink>'}</code> to trigger the page exit animation
           before routing.
         </li>
-        <Code language='javascript'>{`import { TransitionLink } from 'nadpt';
+        <Code language='javascript'>{`import { TransitionLink } from 'narpt';
 
 const HomePage = () => {
   return (

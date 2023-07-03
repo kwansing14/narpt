@@ -1,4 +1,4 @@
-import { TransitionDiv } from 'nadpt';
+import { TransitionDiv } from 'narpt';
 import Code from '@/components/Code';
 
 const TransitionLayout = () => {
@@ -15,7 +15,7 @@ const TransitionLayout = () => {
           In <code>{'app/layout.jsx'}</code> ,wrapped the{' '}
           <code>{'{children}'}</code> with <code>{'<TransitionLayout>'}</code>.
         </li>
-        <Code language='javascript'>{`import { TransitionLayout } from 'nadpt';
+        <Code language='javascript'>{`import { TransitionLayout } from 'narpt';
 
 export default function RootLayout({ children }) {
   return (

@@ -15,7 +15,7 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
-    "nadpt": "^0.0.14",
+    "narpt": "^0.0.14",
     "next": "13.4.6",
     "postcss": "8.4.24",
     "prismjs": "^1.29.0",

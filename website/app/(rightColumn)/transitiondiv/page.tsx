@@ -1,5 +1,5 @@
 import Code from '@/components/Code';
-import { TransitionDiv } from 'nadpt';
+import { TransitionDiv } from 'narpt';
 
 const TransitionDivDocs = () => {
   return (
@@ -27,7 +27,7 @@ export default HomePage;
         <li>
           Replace <code>{'div'}</code> with <code>{'<TransitionDiv>'}</code>
         </li>
-        <Code language='javascript'>{`import { TransitionDiv } from 'nadpt';
+        <Code language='javascript'>{`import { TransitionDiv } from 'narpt';
         
 const HomePage = () => {
   return (
@@ -52,7 +52,7 @@ export default HomePage;`}</Code>
             <li>fadeRight</li>
           </ul>
         </li>
-        <Code language='javascript'>{`import { TransitionDiv } from 'nadpt';
+        <Code language='javascript'>{`import { TransitionDiv } from 'narpt';
         
 const HomePage = () => {
   return (

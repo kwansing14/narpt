@@ -1,4 +1,4 @@
-nadpt - Nextjs App Router Page Transition.
+narpt - Nextjs App Router Page Transition.
 
 ## Support
 
@@ -9,31 +9,31 @@ Currently only support NextJS with app router.
 For npm users:
 
 ```
-npm i nadpt
+npm i narpt
 ```
 
 For yarn users:
 
 ```
-yarn add nadpt
+yarn add narpt
 ```
 
 For pnpm users:
 
 ```
-pnpm i nadpt
+pnpm i narpt
 ```
 
 ## QuickStart
 
 1. create a new nextjs app with `pnpm create next-app`, select yes for App
    Router.
-2. run `pnpm i nadpt`.
+2. run `pnpm i narpt`.
 3. replace `app/layout.js` with the following code.
 
 ```jsx
 import { Inter } from 'next/font/google';
-import { TransitionLayout } from 'nadpt';
+import { TransitionLayout } from 'narpt';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({ children }) {
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
 4. replace `app/page.js` with the following code.
 
 ```jsx
-import { TransitionLink, TransitionDiv } from 'nadpt';
+import { TransitionLink, TransitionDiv } from 'narpt';
 
 export default function Home() {
   return (
@@ -67,7 +67,7 @@ export default function Home() {
 5. create a new page `app/about/page.js` and insert the following code.
 
 ```jsx
-import { TransitionDiv, TransitionLink } from 'nadpt';
+import { TransitionDiv, TransitionLink } from 'narpt';
 
 const AboutPage = () => {
   return (

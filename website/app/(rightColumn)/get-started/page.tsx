@@ -1,16 +1,16 @@
 import Code from '@/components/Code';
-import { TransitionDiv } from 'nadpt';
+import { TransitionDiv } from 'narpt';
 
 const getStartedPage = () => {
   return (
     <TransitionDiv className='docs-cmp'>
       <h2>Installation</h2>
       <p>For npm users:</p>
-      <Code language='bash'>{'npm i nadpt'}</Code>
+      <Code language='bash'>{'npm i narpt'}</Code>
       <p>For yarn users:</p>
-      <Code language='bash'>{'yarn add nadpt'}</Code>
+      <Code language='bash'>{'yarn add narpt'}</Code>
       <p>For pnpm users:</p>
-      <Code language='bash'>{'pnpm i nadpt'}</Code>
+      <Code language='bash'>{'pnpm i narpt'}</Code>
       <div className='divider' />
       <h2>QuickStart</h2>
       <ul>
@@ -19,14 +19,14 @@ const getStartedPage = () => {
           Router.
         </li>
         <li>
-          run <code>pnpm i nadpt.</code>
+          run <code>pnpm i narpt.</code>
         </li>
         <li>
           replace <code>app/layout.js</code> with the following code.
         </li>
         <Code language='javascript'>
           {`import { Inter } from 'next/font/google';
-import { TransitionLayout } from 'nadpt';
+import { TransitionLayout } from 'narpt';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({ children }) {
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
           replace <code>app/page.js</code> with the following code.
         </li>
         <Code language='javascript'>
-          {`import { TransitionLink, TransitionDiv } from 'nadpt';
+          {`import { TransitionLink, TransitionDiv } from 'narpt';
 
 export default function Home() {
   return (
@@ -62,7 +62,7 @@ export default function Home() {
           following code.
         </li>
         <Code language='javascript'>
-          {`import { TransitionDiv, TransitionLink } from 'nadpt';
+          {`import { TransitionDiv, TransitionLink } from 'narpt';
 
 const AboutPage = () => {
   return (

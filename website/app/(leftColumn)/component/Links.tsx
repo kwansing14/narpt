@@ -1,4 +1,4 @@
-import { TransitionLink } from 'nadpt';
+import { TransitionLink } from 'narpt';
 
 const Links = () => {
   return (

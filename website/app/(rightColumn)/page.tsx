@@ -1,4 +1,4 @@
-import { TransitionDiv } from 'nadpt';
+import { TransitionDiv } from 'narpt';
 
 const Home = () => {
   return <TransitionDiv>home</TransitionDiv>;

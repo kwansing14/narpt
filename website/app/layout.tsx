@@ -1,7 +1,7 @@
 import './globals.css';
 
 import { Inter } from 'next/font/google';
-import { TransitionLayout, TransitionLink } from 'nadpt';
+import { TransitionLayout, TransitionLink } from 'narpt';
 import Links from '@/(leftColumn)/component/Links';
 
 const inter = Inter({ subsets: ['latin'] });
