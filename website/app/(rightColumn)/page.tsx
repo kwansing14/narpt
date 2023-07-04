@@ -1,7 +1,10 @@
-import { TransitionDiv } from 'narpt';
+import { redirect } from 'next/navigation';
+import { useEffect } from 'react';
 
-const Home = () => {
-  return <TransitionDiv>home</TransitionDiv>;
-};
+useEffect(() => {
+  redirect('/get-started');
+}, []);
+
+const Home = () => null;
 
 export default Home;
