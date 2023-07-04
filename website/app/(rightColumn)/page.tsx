@@ -5,6 +5,6 @@ useEffect(() => {
   redirect('/get-started');
 }, []);
 
-const Home = () => null;
+const Home = () => <></>;
 
 export default Home;
