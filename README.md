@@ -83,9 +83,12 @@ const AboutPage = () => {
 export default AboutPage;
 ```
 
+## Examples
+[A simple page with page transition](https://narpt.kwansing.dev/simplepage)
+
 ## Full Documentation
 
-[Docs](https://narpt.kwansing.dev/get-started)
+[Docs](https://narpt.kwansing.dev/)
 
 ## License
 
