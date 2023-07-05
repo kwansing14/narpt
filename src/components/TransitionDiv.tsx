@@ -1,6 +1,7 @@
 'use client';
 import { useTransition } from './TransitionLayout';
 import { useEffect, useRef, useMemo } from 'react';
+import { usePathname } from 'next/navigation';
 
 interface TransitionDivProps {
   children: React.ReactNode;
@@ -15,11 +16,12 @@ export const TransitionDiv: React.FC<TransitionDivProps> = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const { isTransitioning, start } = useTransition();
+  const pathname = usePathname();
 
   useEffect(() => {
     start?.();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [pathname]);
 
   const divHeight = useMemo(() => {
     switch (animation) {
