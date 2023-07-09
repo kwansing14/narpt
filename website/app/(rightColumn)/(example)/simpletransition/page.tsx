@@ -5,7 +5,7 @@ const SimplePage = () => {
   return (
     <TransitionDiv className='text-sm px-8 mt-12'>
       <Link
-        href='https://github.com/kwansing14/narpt/tree/main/website/app/(rightColumn)/(example)/simplepage'
+        href='https://github.com/kwansing14/narpt/tree/main/website/app/(rightColumn)/(example)/simpletransition'
         className='underline'
       >
         Source code for this page
