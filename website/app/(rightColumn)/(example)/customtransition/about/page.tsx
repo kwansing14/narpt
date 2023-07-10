@@ -4,13 +4,13 @@ import { useTransition } from 'narpt';
 import Link from 'next/link';
 import GreySlides from '@/(rightColumn)/(example)/customtransition/GreySlides';
 
-const AboutSimplePage = () => {
+const AboutCustomTransition = () => {
   const { isTransitioning } = useTransition({ delay: 800 });
 
   return (
     <div className='text-sm px-8 mt-12'>
       <GreySlides isTransitioning={isTransitioning} />
-      <h1 className='pt-4 text-2xl font-bold tracking-tight'>Work</h1>
+      <h1 className='pt-4 text-2xl font-bold tracking-tight'>About</h1>
       <div className='pt-4'>
         <Link
           href='https://github.com/kwansing14/narpt/tree/main/website/app/(rightColumn)/(example)/customtransition'
@@ -38,4 +38,4 @@ const AboutSimplePage = () => {
   );
 };
 
-export default AboutSimplePage;
+export default AboutCustomTransition;

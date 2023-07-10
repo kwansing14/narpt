@@ -4,7 +4,7 @@ import { useTransition } from 'narpt';
 import Link from 'next/link';
 import GreySlides from '@/(rightColumn)/(example)/customtransition/GreySlides';
 
-const WorkSimplePage = () => {
+const WorkCustomTransition = () => {
   const { isTransitioning } = useTransition({ delay: 800 });
 
   return (
@@ -34,4 +34,4 @@ const WorkSimplePage = () => {
   );
 };
 
-export default WorkSimplePage;
+export default WorkCustomTransition;
