@@ -22,7 +22,7 @@
     @apply text-sm uppercase font-semibold text-slate-900;
   }
   .docs-cmp > p {
-    @apply text-sm text-slate-700;
+    @apply text-sm text-slate-700 leading-relaxed;
   }
   .docs-cmp > p > code {
     @apply text-slate-700 px-2 rounded-lg py-1 bg-zinc-300;

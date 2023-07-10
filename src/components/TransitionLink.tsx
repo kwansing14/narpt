@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useMemo } from 'react';
 import { useTransition } from './TransitionLayout';
 import { useRouter, usePathname } from 'next/navigation';
 
@@ -17,7 +18,8 @@ export const TransitionLink: React.FC<TransitionLinkProps> = ({
 }) => {
   const router = useRouter();
   const pathname = usePathname();
-  const { end } = useTransition();
+  const { end, delay } = useTransition({});
+  const delayInMs = useMemo(() => delay || 300, [delay]);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -26,7 +28,7 @@ export const TransitionLink: React.FC<TransitionLinkProps> = ({
     end?.();
     setTimeout(() => {
       router.push(href);
-    }, 300);
+    }, delayInMs);
   };
   return (
     <Link className={className} href={href} onClick={handleClick}>

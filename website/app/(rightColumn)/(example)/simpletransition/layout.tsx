@@ -1,4 +1,4 @@
-import Header from '@/(rightColumn)/(example)/simplepage/Header';
+import Header from '@/(rightColumn)/(example)/simpletransition/Header';
 
 export default function SimplepageLayout({
   children, // will be a page or nested layout
