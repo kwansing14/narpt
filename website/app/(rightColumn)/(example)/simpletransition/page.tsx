@@ -4,6 +4,7 @@ import Link from 'next/link';
 const SimplePage = () => {
   return (
     <TransitionDiv className='text-sm px-8 mt-12'>
+      <h1 className='mb-4 text-2xl font-bold tracking-tight'>Home</h1>
       <Link
         href='https://github.com/kwansing14/narpt/tree/main/website/app/(rightColumn)/(example)/simpletransition'
         className='underline'
