@@ -17,7 +17,7 @@ const TransitionDivDocs = () => {
       <div className='divider' />
       <h2>Usage</h2>
       <ul>
-        <li>Find a content to animated.</li>
+        <li>Find a content to animate.</li>
         <Code language='javascript'>{`const HomePage = () => {
   return (
     <div>
