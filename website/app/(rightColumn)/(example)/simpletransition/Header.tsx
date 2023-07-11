@@ -1,4 +1,5 @@
 import { TransitionLink, TransitionDiv } from 'narpt';
+import Ping from '@/components/Ping';
 
 const Header = () => {
   return (
@@ -6,13 +7,24 @@ const Header = () => {
       animation='fadeUp'
       className='flex justify-between text-sm px-8 py-4 underline'
     >
-      <TransitionLink href='/simpletransition'>Welcome</TransitionLink>
+      <TransitionLink className='relative' href='/simpletransition'>
+        Welcome
+        <Ping />
+      </TransitionLink>
       <div className='flex gap-4'>
-        <TransitionLink className='underline' href='/simpletransition/work'>
+        <TransitionLink
+          className='relative underline'
+          href='/simpletransition/work'
+        >
           Work
+          <Ping />
         </TransitionLink>
-        <TransitionLink className='underline' href='/simpletransition/about'>
+        <TransitionLink
+          className=' relative underline'
+          href='/simpletransition/about'
+        >
           About
+          <Ping />
         </TransitionLink>
       </div>
     </TransitionDiv>
