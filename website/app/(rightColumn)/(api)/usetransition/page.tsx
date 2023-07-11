@@ -26,22 +26,31 @@ const UseTransition = () => {
       <div className='divider' />
       <h2>Usage</h2>
       <p>
-        Wrapping <code>app/layout.tsx</code> with{' '}
-        <code>{'<TransitionLayout>'}</code> is required before using
-        useTransition hooks.{' '}
+        1. Wrapping content with <code>{'<TransitionLayout>'}</code> in{' '}
+        <code>app/layout.tsx</code> is required when using the useTransition
+        hooks.{' '}
         <TransitionLink href='/transitionlayout' className='underline'>
-          {'Reference to <TransitionLayout> for more info.'}
+          {'Reference: <TransitionLayout>.'}
         </TransitionLink>
       </p>
       <br />
-      <p>1. Import from library</p>
-      <Code language='javascript'>{`import { useTransition, TransitionLink } from 'narpt';`}</Code>
-      <p>2. Calling useTransition hooks</p>
+      <p>
+        2. Replace <code>{'<Link>'}</code> with{' '}
+        <code>{'<TransitionLink>'}</code> is also required when using the
+        useTransition hooks.{' '}
+        <TransitionLink href='/transitionlink' className='underline'>
+          {'Reference: <TransitionLink>.'}
+        </TransitionLink>
+      </p>
+      <br />
+      <p>3. Import from library</p>
+      <Code language='javascript'>{`import { useTransition } from 'narpt';`}</Code>
+      <p>4. Calling useTransition hooks</p>
       <Code language='javascript'>{`const { isTransitioning } = useTransition({});`}</Code>
       <div className='divider' />
-      <h2>Applying animation to a div using inline style</h2>
+      <h2>Animate using inline style</h2>
       <Code language='javascript'>{`'use client';
-import { useTransition, TransitionLink } from 'narpt';
+import { useTransition } from 'narpt';
 
 const TestLinkPage = () => {
   const { isTransitioning } = useTransition({});
@@ -63,7 +72,7 @@ const TestLinkPage = () => {
 export default TestLinkPage;
 `}</Code>
       <div className='divider' />
-      <h2>Applying animation a to div using tailwindcss</h2>
+      <h2>Animate using tailwindcss</h2>
       <Code language='javascript'>{`'use client';
 import { useTransition } from 'narpt';
 import { twMerge } from 'tailwind-merge';
@@ -87,6 +96,12 @@ const TestLinkPage = () => {
 export default TestLinkPage;
 `}</Code>
       <div className='divider' />
+      <h2>Customising transition duration</h2>
+      <p>
+        Default transition duration is set to 300ms. Transition duration can be
+        customised by adding a delay key to the useTransition hook.{' '}
+      </p>
+      <Code language='javascript'>{`const { isTransitioning } = useTransition({ delay: 800 }); // this will change delay from 300ms to 800ms`}</Code>
     </TransitionDiv>
   );
 };
