@@ -1,5 +1,5 @@
 import Code from '@/components/Code';
-import { TransitionDiv } from 'narpt';
+import { TransitionDiv, TransitionLink } from 'narpt';
 
 export const metadata = {
   title: 'NARPT - Get Started',
@@ -82,6 +82,14 @@ export default AboutPage;`}
         </Code>
       </ul>
       <div className='divider' />
+      <h2>Customised page transition</h2>
+      <p>
+        For more customised animation check out{' '}
+        <TransitionLink className='underline' href='/usetransition'>
+          useTransition()
+        </TransitionLink>{' '}
+        hook .
+      </p>
     </TransitionDiv>
   );
 };
