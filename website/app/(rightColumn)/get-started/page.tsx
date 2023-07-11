@@ -88,7 +88,7 @@ export default AboutPage;`}
         <TransitionLink className='underline' href='/usetransition'>
           useTransition()
         </TransitionLink>{' '}
-        hook .
+        hook.
       </p>
     </TransitionDiv>
   );
