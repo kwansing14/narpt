@@ -1,11 +1,10 @@
 import Ping from '@/components/Ping';
 import { TransitionLink } from 'narpt';
-import { headers } from 'next/headers';
+// import { headers } from 'next/headers';
 
 const Header = () => {
-  const headersList = headers();
-  const pathname = headersList.get('x-invoke-path');
-  console.log('path', pathname);
+  // const headersList = headers();
+  // const pathname = headersList.get('x-invoke-path');
   return (
     <div className='flex justify-between text-sm px-8 py-4 absolute top-0 left-0 w-full '>
       <div>Welcome</div>
