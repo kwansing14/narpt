@@ -83,9 +83,8 @@ const TestLinkPage = () => {
     <div
       className={twMerge(
         'transition-all transition-duration-300',
-        isTransitioning
-          ? 'opacity-100 translate-y-0'
-          : 'opacity-0 translate-y-5'
+        isTransitioning ? 'opacity-100' : 'opacity-0',
+        isTransitioning ? 'translate-y-0' : 'translate-y-5'
       )}
     >
       lorem ipsum..
@@ -102,6 +101,7 @@ export default TestLinkPage;
         customised by adding a delay key to the useTransition hook.{' '}
       </p>
       <Code language='javascript'>{`const { isTransitioning } = useTransition({ delay: 800 }); // this will change delay from 300ms to 800ms`}</Code>
+      <div className='divider' />
     </TransitionDiv>
   );
 };
