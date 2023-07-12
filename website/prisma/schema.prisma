@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+}
+
+model web_event {
+  id             String       @id
+  created_at     DateTime     @default(now())
+  updated_at     DateTime
+  event_type     String
+  event_name     String
+  payload        String       @default("")
+  page_id        String
+  web_session_id String
+  user_id        String
+  web_pageview   web_pageview @relation(fields: [page_id], references: [id], onDelete: Cascade)
+  web_user       web_user     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  web_session    web_session  @relation(fields: [web_session_id], references: [id], onDelete: Cascade)
+}
+
+model web_pageview {
+  id             String      @id
+  created_at     DateTime    @default(now())
+  updated_at     DateTime
+  page           String
+  referrer       String      @default("")
+  query_params   String      @default("{}")
+  duration       Int         @default(0)
+  web_session_id String
+  user_id        String
+  web_event      web_event[]
+  web_user       web_user    @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  web_session    web_session @relation(fields: [web_session_id], references: [id], onDelete: Cascade)
+}
+
+model web_session {
+  id           String         @id
+  created_at   DateTime       @default(now())
+  updated_at   DateTime
+  referrer     String         @default("")
+  query_params String         @default("")
+  duration     Int            @default(0)
+  country      String?
+  city         String?
+  device       String?
+  os           String?
+  browser      String?
+  language     String?
+  user_id      String
+  web_event    web_event[]
+  web_pageview web_pageview[]
+  web_user     web_user       @relation(fields: [user_id], references: [id], onDelete: Cascade)
+}
+
+model web_user {
+  id           String         @id
+  data         String         @default("{}")
+  created_at   DateTime       @default(now())
+  updated_at   DateTime
+  web_event    web_event[]
+  web_pageview web_pageview[]
+  web_session  web_session[]
+}

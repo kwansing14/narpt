@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@loglib/next": "^0.2.0",
+    "@loglib/prisma-adapter": "^0.2.3",
+    "@loglib/tracker": "^0.4.3",
+    "@loglib/ui": "^0.5.3",
+    "@prisma/client": "^5.0.0",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
@@ -26,6 +31,7 @@
     "typescript": "5.1.3"
   },
   "devDependencies": {
-    "@types/prismjs": "^1.26.0"
+    "@types/prismjs": "^1.26.0",
+    "prisma": "^5.0.0"
   }
 }
