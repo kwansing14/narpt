@@ -3,6 +3,7 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import { TransitionLayout, TransitionLink } from 'narpt';
 import Links from '@/(leftColumn)/component/Links';
+import LogLib from '@loglib/tracker/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
             'linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 51.55%), linear-gradient(260.31deg, rgba(233, 202, 150, 0.25) 0%, rgba(210, 99, 220, 0.25) 172.37%)',
         }}
       >
+        <LogLib config={{}} />
         <TransitionLayout>
           <main className='flex min-h-screen flex-col items-center border pb-24'>
             <TransitionLink
