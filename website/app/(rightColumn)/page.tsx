@@ -1,5 +1,12 @@
-const Home = () => {
-  return <div></div>;
+import GetStartedPage from '@/(rightColumn)/get-started/page';
+
+export const metadata = {
+  title: 'NARPT',
+  description: 'Nextjs App Router Page Transition',
 };
 
-export default Home;
+const TestLinkPage = () => {
+  return <GetStartedPage />;
+};
+
+export default TestLinkPage;
